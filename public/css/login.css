@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(232, 232, 232);
+    overflow-x: hidden;
+}
+.registerHeading, .loginHeading{
+    text-align: center;
+    margin-top: 4em;
+    position: relative;
+    z-index: 10;
+    color: #191919;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+.loginform, .registerform{
+    width: 500px;
+    height: 300px;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #191919;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: 2px solid white;
+}
+.loginform h1, .registerform h1{
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    font-size: 37px;
+    
+}
+
+.loginform input, .registerform input, .secretSubmit input{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: .25s;
+}
+
+.secretSubmit input{
+    color: #191919;
+}
+.secretText{
+    background-color: white;
+}
+.loginform input:focus, .registerform input:focus, .secretSubmit input:focus{
+    border: 2px solid #30f184;
+    width: 280px;
+}
+.loginform input[type = "submit"], .registerform input[type = "submit"], .secretSubmit input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #30f184;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.loginform input[type = "submit"]:hover, .registerform input[type = "submit"]:hover{
+    background: #30f184;
+}
+
+.submit{
+    margin-bottom: 40px;
+}
+
+.details{
+    height: 111px;
+    margin: auto;
+}
+/*********Home page**********/
+.jumbrotron{
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    height: 60vh;
+    width: 50%;
+    margin: 5em auto;
+}
+.fa-key{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 150px;
+    color: black;
+
+}
+
+.secHeader{
+    font-size: 1.7em;
+    color: black;
+    text-align: center;
+    margin: 1.5em 0 0 0;
+}
+/*home page paragraph styling*/
+.secretP{
+    font-size: 0.8em;
+    text-align: center;
+    color: rgb(90, 89, 89);
+    margin:.5em 0 3em;
+}
+
+.divider{
+    width: 100%;
+    margin: auto;
+    height: 1px;
+    background-color: grey;
+    margin-bottom: 2em;
+}
+.secretDivider{
+    margin-top: 10px; 
+}
+.actionBtns{
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+.twinBtn{
+    padding: .8em 2em;
+    font-size: .9em;
+    border-radius: 40px;
+    text-decoration: none;
+    outline: none;
+}
+.registerBtn:hover, .logout:hover{
+    background-color: #3498db;
+} 
+.loginBtn:hover, .submitSecretBtn:hover{
+    color: #30f184;
+    border: none;
+}
+.registerBtn, .logout{
+    color: black;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.loginBtn,.submitSecretBtn{  
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.googleBtn{
+    background: linear-gradient(to right, #30f184, #3498db);
+    border: 1px solid rgb(94, 94, 94);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-left: 37%;
+}
+.googleBtn:hover{
+    color: #191919;
+}
+
+.loginGoogle{
+    margin-left: 4px;
+}
+
+/*******Secret Submit********/
+.secretSubmit{
+    width: 50%;
+    height: 200px;
+    margin: 4em auto;
+}
+.secretBtn{
+    width: 22%;
+    margin: 0 40%  ;
+    text-align: center;
+    padding: .5em 1.5em;
+    border-radius: 40px;
+    outline: none;
+    font-size: .7em;
+    background-color: white;
+    border: 1px solid #191919
+}
+.secretBtn:hover{
+    border: 1px solid #30f184;
+}
+
+/****secret page****/
+/*secret page header styling*/
+
+.secret-box{
+    position: relative;
+    height: 150px;
+    overflow-y: scroll;
+}
+.secret{
+    margin-top: 1em;
+    background-color: #191919;
+    padding: .6em 0;
+    font-size: .9em;
+    border-radius: 30px;
+    color: #30f184;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .1em;
+}
+
+.secretpgSubmit{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+}

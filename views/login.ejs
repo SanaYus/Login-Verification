@@ -1,0 +1,15 @@
+<%- include('header')%>
+
+<h2 class="loginHeading">Login</h2>
+<form class="loginform" action="/login" method="post">
+  <div class="details">
+  <input type="text" name="username" placeholder="Username" required>
+  <input type="password" name="password" placeholder="Password" required>
+  </div>
+  <div class="submit">
+  <input type="submit" name="submit" value="Login">
+  </div>
+  <a href="/auth/google" class="twinBtn googleBtn loginGoogle">Sign in with Google</a>
+</form>
+
+<%- include('footer')%>
